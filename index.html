@@ -38,6 +38,10 @@
       cursor: pointer; box-shadow: 0 8px 24px rgba(225,27,34,.45);
     }
     #startBtn:active { transform: scale(.97); }
+    /* Force-hide A-Frame's VR / enter-AR buttons — this is a marker AR experience, not headset VR */
+    .a-enter-vr, .a-enter-ar, .a-enter-vr-button, .a-enter-ar-button,
+    .a-orientation-modal { display: none !important; }
+
     #hint {
       position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
       z-index: 50; background: rgba(0,0,0,.55); color: #fff;
@@ -61,6 +65,7 @@
   <!-- AR Scene -->
   <a-scene
     vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false"
     renderer="logarithmicDepthBuffer: true; precision: medium;"
     embedded
     arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
