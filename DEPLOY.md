@@ -11,7 +11,7 @@ This folder is a ready-to-publish AR web page. Once your final video is in `asse
 1. Export your final cut from DaVinci Resolve (see settings in `assets/README.txt`).
 2. Save it as `assets/experience.mp4` inside this folder, replacing nothing else.
 
----
+----
 
 ## Step 2 — Create the GitHub repository
 
